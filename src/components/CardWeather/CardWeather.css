@@ -1,0 +1,82 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 580px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 2.8px solid rgba(255, 255, 255, .5);
+} 
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    margin-top: 15px;
+    border-radius: 16px;
+    padding: 4px 6px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+    border: 1.8px solid rgba(255, 255, 255, .3);
+}
+
+
+.search input:focus-visible {
+    outline: none;
+}
+
+.btn {
+    margin: 15px 0 0 8px;
+    background: transparent;
+    background-image: url('../../img/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 30px;
+    border: none;
+    transition: all 300ms ease;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.camejo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-container {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.camejo img {
+    width: 160px;
+}
+
+.info-container div img {
+    width: 30px;
+    position: relative;
+
+}
+
+.info-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
