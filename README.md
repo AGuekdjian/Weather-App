@@ -3,7 +3,7 @@ Proyecto en React, el objetivo es el uso de api, en este cas es una api donde me
 
 Open page -----
 
-# This project was started with Vite.js, using React.
+## This project was started with Vite.js, using React.
 
 ## Getting Started with:
 
