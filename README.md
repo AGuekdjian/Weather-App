@@ -1,13 +1,11 @@
 # Weather-App
 Proyecto en React, el objetivo es el uso de api, en este cas es una api donde me permite consultar el clima en diferentes ciudades.!!
 
-
 Open page -----
 
-#This project was started with Vite.js, using React.
+# This project was started with Vite.js, using React.
 
-
-Getting Started with:
+## Getting Started with:
 
 ### `npm create vite@latest`
 
