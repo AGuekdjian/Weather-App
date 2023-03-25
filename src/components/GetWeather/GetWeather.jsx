@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import CardWeather from '../CardWeather/CardWeather'
 
 export default function GetWeather() {
+    // url de la api
     const apiUrl = `https://api.weatherapi.com/v1/current.json?key=d07df994f39a4b0f9f9154719232503`
     const cityUrl = "&q="
     const [weather, setWeather] = useState({})
