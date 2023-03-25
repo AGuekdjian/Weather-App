@@ -6,6 +6,7 @@ Open page -----
 
 #This project was started with Vite.js, using React.
 
+
 Getting Started with:
 
 ### `npm create vite@latest`
