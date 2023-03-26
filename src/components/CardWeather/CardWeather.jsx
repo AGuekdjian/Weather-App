@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import './CardWeather.css'
 import CardDefault from '../CardDefault/CardDefault'
 
-const CardWeather = ({ getWeather, infWeather }) => {
+const CardWeather = ({ getWeather, infWeather, status }) => {
     const ciudad = useRef(null)
 
     const send = (e) => {
@@ -13,20 +13,19 @@ const CardWeather = ({ getWeather, infWeather }) => {
         getWeather(city)
     }
 
-    console.log(infWeather)
-
     return (
         <section className='card-container'>
             <form onSubmit={send}>
                 <div className='search'>
-                    <input ref={ciudad} type='text' placeholder='Ciudad'/>
+                    <input ref={ciudad} type='text' placeholder='Ciudad' />
                     <button className='btn' type='submit'></button>
                 </div>
             </form>
             {Object.keys(infWeather).length > 0 ?
+                (status == 400 && <><h1 className='msj-error'>{infWeather.error.message}</h1></>) ||
                 <>
                     <div className='camejo' >
-                        <img src={infWeather.current.condition.icon} alt={`Icon of ${infWeather.current.condition.text}`}/>
+                        <img src={infWeather.current.condition.icon} alt={`Icon of ${infWeather.current.condition.text}`} />
                         <h1>{`${infWeather.current.temp_c}°c`}</h1>
                         <h2>{`${infWeather.location.name}, ${infWeather.location.country}`}</h2>
                         <h6>{`${infWeather.current.last_updated}`}</h6>
@@ -41,8 +40,8 @@ const CardWeather = ({ getWeather, infWeather }) => {
                             <p>{`${infWeather.current.wind_kph} km/h`}<br />Wind Speed</p>
                         </div>
                     </div>
-                </> :
-                <CardDefault />
+                </>
+                : <CardDefault />
             }
 
         </section>

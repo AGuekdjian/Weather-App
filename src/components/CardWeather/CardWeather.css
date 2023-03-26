@@ -18,7 +18,7 @@
 .search input {
     margin-top: 15px;
     border-radius: 16px;
-    padding: 4px 6px;
+    padding: 7px 9px;
     background: transparent;
     backdrop-filter: blur(20px);
     border-radius: 16px;
@@ -79,4 +79,9 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.msj-error {
+    position: relative;
+    top: 25%;
 }
